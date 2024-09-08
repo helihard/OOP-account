@@ -3,12 +3,12 @@ public class Account {
   private double balance;
 
   public Account() {
-    name = "";
-    balance = 0;
+    this.name = "";
+    this.balance = 0;
   }
 
   public Account(double balance) {
-    name = "";
+    this.name = "";
     this.balance = balance;
   }
 
@@ -18,7 +18,7 @@ public class Account {
   }
 
   public void withdraw(double amount) {
-    if (amount > 0 && balance >= amount) {
+    if (amount > 0 && this.balance >= amount) {
       this.balance -= amount;
     }
   }
